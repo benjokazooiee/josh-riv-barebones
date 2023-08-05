@@ -26,9 +26,7 @@ export default function Home(props) {
 }
 
 export const getStaticPaths = async () => {
-  const { data } = await client.queries.postConnection({
-    filter: { draft: { eq: false } },
-  });
+  const { data } = await client.queries.postConnection();
   const paths = data.postConnection.edges.map((x) => {
     return { params: { slug: x.node._sys.filename } };
   });
@@ -39,13 +37,12 @@ export const getStaticPaths = async () => {
   };
 };
 
-export const getStaticProps = async ({params, preview = false}) => {
+export const getStaticProps = async (ctx) => {
   const { data, query, variables } = await client.queries.post({
-    relativePath: params.slug + ".md",
+    relativePath: ctx.params.slug + ".md",
   });
 
   return {
-    notFound: data?.post?.draft && !preview,
     props: {
       data,
       query,

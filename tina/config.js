@@ -43,13 +43,6 @@ const schema = defineSchema({
             component: "textarea",
           },
         },
-        {
-          name: 'draft',
-          label: 'Draft',
-          type: 'boolean',
-          required: true,
-          description: 'If this is checked the post will not be published',
-        },
       ],
       ui: {
         router: ({ document }) => {
@@ -84,19 +77,6 @@ export const config = defineConfig({
     outputFolder: "admin", // within the public folder
   },
   schema,
-  admin: {
-    auth: {
-      onLogin: async ({ token }) => {
-        //  When the user logs in enter preview mode
-        location.href =
-          `/api/preview/enter?token=${token.id_token}&slug=` + location
-      },
-      onLogout: async () => {
-        // When the user logs out exit preview mode
-        location.href = `/api/preview/exit?slug=` + location
-      },
-    },
-  },
 });
 
 export default config;
