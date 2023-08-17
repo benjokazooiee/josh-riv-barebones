@@ -3,11 +3,42 @@ import { defineConfig, defineSchema } from "tinacms";
 const schema = defineSchema({
   collections: [
     {
+      label: "Category",
+      name: "category",
+      path: "content/category",
+      format: "md",
+      list: "true",
+      fields: [
+        {
+          label: "Title",
+          name: "title",
+          type: "string",
+        },
+      ]
+    },
+    {
       label: "Page Content",
       name: "page",
       path: "content/page",
       format: "mdx",
       fields: [
+        {
+          name: "hero",
+          label: "Hero Content",
+          type: "object",
+          fields: [
+            {
+              name: "heading",
+              label: "Hero Heading",
+              type: "string"
+            },
+            {
+              name: "Tagline",
+              label: "Hero Tagline",
+              type: "string",
+            },
+          ]
+        },
         {
           name: "body",
           label: "Main Content",
@@ -19,6 +50,9 @@ const schema = defineSchema({
         router: ({ document }) => {
           if (document._sys.filename === "home") {
             return `/`;
+          }
+          if (document._sys.filename === "about") {
+            return '/about'
           }
           return undefined;
         },
@@ -42,6 +76,19 @@ const schema = defineSchema({
           ui: {
             component: "textarea",
           },
+        },
+        {
+          type: "boolean",
+          label: "Published?",
+          name: "published",
+        },
+        {
+          label: "Category",
+          name: "category",
+          type: "reference",
+          collections: [
+            'category'
+          ]
         },
       ],
       ui: {
