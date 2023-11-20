@@ -2787,18 +2787,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tinacms/app@npm:1.2.26":
-  version: 1.2.26
-  resolution: "@tinacms/app@npm:1.2.26"
+"@tinacms/app@npm:1.2.31":
+  version: 1.2.31
+  resolution: "@tinacms/app@npm:1.2.31"
   dependencies:
     "@codemirror/language": 6.0.0
     "@graphiql/toolkit": 0.8.4
     "@headlessui/react": 1.6.6
     "@heroicons/react": 1.0.6
     "@monaco-editor/react": 4.4.5
-    "@tinacms/mdx": 1.3.17
+    "@tinacms/mdx": 1.3.22
     "@xstate/react": 3.0.0
-    final-form: 4.20.7
+    final-form: 4.20.10
     graphiql: 3.0.0-alpha.1
     graphql: 15.8.0
     monaco-editor: 0.31.0
@@ -2807,16 +2807,16 @@ __metadata:
     react-dom: 17.0.2
     react-router-dom: 6.3.0
     tailwindcss: ^3.2.7
-    tinacms: 1.5.19
+    tinacms: 1.5.24
     typescript: ^4.6.4
     zod: ^3.14.3
-  checksum: 155f261b8c0ffa7e60abebc4d3aaefc7f6884291111abfd61f0232f53bca4b8aa386c8e67429388da857320b1fee93fc9d314754f7539168505563961382ee43
+  checksum: dc99d4364c416dc9ce531406d450ee125d29036fc1827873c7072dd3556cdc653960cdbcd70d2849f471b598ec45b590a3640473d21377afe6676d1496031292
   languageName: node
   linkType: hard
 
-"@tinacms/cli@npm:1.5.28":
-  version: 1.5.28
-  resolution: "@tinacms/cli@npm:1.5.28"
+"@tinacms/cli@npm:1.5.34":
+  version: 1.5.34
+  resolution: "@tinacms/cli@npm:1.5.34"
   dependencies:
     "@graphql-codegen/core": ^2.1.0
     "@graphql-codegen/plugin-helpers": latest
@@ -2832,12 +2832,12 @@ __metadata:
     "@tailwindcss/aspect-ratio": ^0.4.0
     "@tailwindcss/line-clamp": ^0.3.1
     "@tailwindcss/typography": ^0.5.9
-    "@tinacms/app": 1.2.26
-    "@tinacms/datalayer": 1.2.24
-    "@tinacms/graphql": 1.4.24
+    "@tinacms/app": 1.2.31
+    "@tinacms/datalayer": 1.2.29
+    "@tinacms/graphql": 1.4.29
     "@tinacms/metrics": 1.0.2
-    "@tinacms/schema-tools": 1.4.11
-    "@tinacms/search": 1.0.9
+    "@tinacms/schema-tools": 1.4.14
+    "@tinacms/search": 1.0.14
     "@vitejs/plugin-react": 3.1.0
     ajv: ^6.12.3
     altair-express-middleware: 4.0.6
@@ -2850,6 +2850,7 @@ __metadata:
     cli-spinner: ^0.2.10
     clipanion: ^3.2.0
     cors: ^2.8.5
+    crypto-js: ^4.1.1
     dotenv: ^16.0.1
     esbuild: ^0.18.10
     express: ^4.17.1
@@ -2876,8 +2877,9 @@ __metadata:
     readable-stream: ^4.3.0
     rollup-plugin-visualizer: ^5.9.0
     tailwindcss: ^3.2.7
-    tinacms: 1.5.19
+    tinacms: 1.5.24
     typanion: 3.13.0
+    typescript: 4.3.5
     url-pattern: ^1.0.3
     vite: ^4.3.9
     yarn: ^1.22.17
@@ -2885,16 +2887,16 @@ __metadata:
     zod: ^3.14.3
   bin:
     tinacms: bin/tinacms
-  checksum: 897f0fdf9baa9e894cf50d9b2de8298e03ec085dc7775f09854d2b24d49411a9e2a0cb1673efbc688672e3b143b383e18a46958b0c3994a7da55b2fb1190a63f
+  checksum: 73828880ef40df6fa907b0977c4578556c482575fb96cd87e6b685d5ac59678f59de3e796ba4d8f0d6aeb8c6bb2d1200b82307dac9029e3ac22417ac07477280
   languageName: node
   linkType: hard
 
-"@tinacms/datalayer@npm:1.2.24":
-  version: 1.2.24
-  resolution: "@tinacms/datalayer@npm:1.2.24"
+"@tinacms/datalayer@npm:1.2.29":
+  version: 1.2.29
+  resolution: "@tinacms/datalayer@npm:1.2.29"
   dependencies:
-    "@tinacms/graphql": 1.4.24
-  checksum: eb9ab7ed1ebaec2a7b902464358110dd50db8337c12800220cf056fcdfd4bd17cedcfe0d1f9bff7f22c0629d700b3c6183151e9e0647316d6e61851bc7a93ce4
+    "@tinacms/graphql": 1.4.29
+  checksum: 6b08c146c22be08472007e0ade1c25330aefbb9eda56d273b014634a4407fc6c4dc4b3976c672c53e46c4c060e1e3b4220d3809fef147d702ef1822d481ef23c
   languageName: node
   linkType: hard
 
@@ -2928,6 +2930,40 @@ __metadata:
     readable-stream: ^4.3.0
     yup: ^0.32.9
   checksum: 3ff9b4b5c038d6a9d59956a803b701f6ae2a61cec41c210b9b1bbcb40d05eb317bc671fe529bade3d1d6fdfb611cd04cc210035c41a1129566b0a57bc81be43b
+  languageName: node
+  linkType: hard
+
+"@tinacms/graphql@npm:1.4.29":
+  version: 1.4.29
+  resolution: "@tinacms/graphql@npm:1.4.29"
+  dependencies:
+    "@iarna/toml": ^2.2.5
+    "@tinacms/mdx": 1.3.22
+    "@tinacms/schema-tools": 1.4.14
+    abstract-level: ^1.0.3
+    body-parser: ^1.19.0
+    cors: ^2.8.5
+    dataloader: ^2.0.0
+    date-fns: ^2.21.1
+    encoding-down: ^7.1.0
+    estree-walker: ^3.0.0
+    fast-glob: ^3.2.5
+    fs-extra: ^9.0.1
+    glob-parent: ^6.0.2
+    graphql: 15.8.0
+    gray-matter: ^4.0.2
+    isomorphic-git: ^1.21.0
+    js-sha1: ^0.6.0
+    js-yaml: ^3.14.1
+    jsonpath-plus: ^6.0.1
+    lodash: ^4.17.20
+    many-level: ^2.0.0
+    micromatch: 4.0.5
+    normalize-path: ^3.0.0
+    readable-stream: ^4.3.0
+    scmp: ^2.1.0
+    yup: ^0.32.9
+  checksum: 74c925d4747300819c84d5b4efa06f67c24b2146b273cbdb401c60204f86d15597024b02f9946a5554fe2a694fb15015a95d299da00ab0e1bf6be28ad04ec54e
   languageName: node
   linkType: hard
 
@@ -2966,6 +3002,44 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tinacms/mdx@npm:1.3.22":
+  version: 1.3.22
+  resolution: "@tinacms/mdx@npm:1.3.22"
+  dependencies:
+    "@tinacms/schema-tools": 1.4.14
+    acorn: 8.8.2
+    ccount: 2.0.1
+    estree-util-is-identifier-name: 2.1.0
+    lodash-es: 4.17.21
+    mdast-util-compact: 4.1.1
+    mdast-util-directive: 2.2.4
+    mdast-util-from-markdown: 1.3.0
+    mdast-util-gfm: 2.0.2
+    mdast-util-mdx: 2.0.1
+    mdast-util-mdx-jsx: 2.1.2
+    mdast-util-to-markdown: 1.5.0
+    micromark-extension-gfm: 2.0.3
+    micromark-factory-mdx-expression: 1.0.7
+    micromark-factory-space: 1.0.0
+    micromark-factory-whitespace: 1.0.0
+    micromark-util-character: 1.1.0
+    micromark-util-symbol: 1.0.1
+    micromark-util-types: 1.0.2
+    parse-entities: 4.0.1
+    prettier: ^2.7.1
+    remark: 14.0.2
+    remark-gfm: ^2.0.0
+    remark-mdx: 2.3.0
+    stringify-entities: 4.0.3
+    unist-util-source: 4.0.2
+    unist-util-stringify-position: 3.0.3
+    unist-util-visit: 4.1.2
+    uvu: 0.5.6
+    vfile-message: 3.1.4
+  checksum: dd7b6749d7972e6c0c06b36ed42b7231817ce863699d040d3fae5314085ff81bd79e74ee721247245dfdb02552025c5295f6a0af5faa5456034b14dca20348c8
+  languageName: node
+  linkType: hard
+
 "@tinacms/metrics@npm:1.0.2":
   version: 1.0.2
   resolution: "@tinacms/metrics@npm:1.0.2"
@@ -2988,6 +3062,37 @@ __metadata:
     react: ">=16.14.0"
     yup: ^0.32.0
   checksum: 37e2b92a4ee9bf5a8ec5edcb09bb453071343986e855a463f5aea5bdc449851abd4d34177cfb2e92a8bbaa65a7add4a6171b4867399fd60341f94913519238ff
+  languageName: node
+  linkType: hard
+
+"@tinacms/schema-tools@npm:1.4.14":
+  version: 1.4.14
+  resolution: "@tinacms/schema-tools@npm:1.4.14"
+  dependencies:
+    picomatch-browser: 2.2.6
+    url-pattern: ^1.0.3
+    zod: ^3.14.3
+  peerDependencies:
+    react: ">=16.14.0"
+    yup: ^0.32.0
+  checksum: 9f77664129c2ee264351e87ea3b68a69af577320bf9f03cdb1160daf8c12a8db418c0ed6c304c5b7887a0e40927d3ae3d362a10586d6e0268b3f9d641d30f60c
+  languageName: node
+  linkType: hard
+
+"@tinacms/search@npm:1.0.14":
+  version: 1.0.14
+  resolution: "@tinacms/search@npm:1.0.14"
+  dependencies:
+    "@tinacms/graphql": 1.4.29
+    "@tinacms/schema-tools": 1.4.14
+    abstract-level: ^1.0.3
+    memory-level: ^1.0.0
+    module-error: ^1.0.2
+    node-fetch: 2
+    search-index: 4.0.0
+    sqlite-level: ^1.0.1
+    stopword: ^2.0.8
+  checksum: d2e3268cbe8aceba39d1e01be0d37b148af7aefe398c89c71a9cde9b872f8b2f01fb3f1958ef07c9a6bdaa11ae4f7db4e6da6f3b5fbafc40b02dc0aa032a69a6
   languageName: node
   linkType: hard
 
@@ -5435,6 +5540,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"crypto-js@npm:^4.1.1":
+  version: 4.2.0
+  resolution: "crypto-js@npm:4.2.0"
+  checksum: f051666dbc077c8324777f44fbd3aaea2986f198fe85092535130d17026c7c2ccf2d23ee5b29b36f7a4a07312db2fae23c9094b644cc35f7858b1b4fcaf27774
+  languageName: node
+  linkType: hard
+
 "css-box-model@npm:^1.2.0":
   version: 1.2.1
   resolution: "css-box-model@npm:1.2.1"
@@ -6037,6 +6149,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"escape-string-regexp@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "escape-string-regexp@npm:5.0.0"
+  checksum: 20daabe197f3cb198ec28546deebcf24b3dbb1a5a269184381b3116d12f0532e06007f4bc8da25669d6a7f8efb68db0758df4cd981f57bc5b57f521a3e12c59e
+  languageName: node
+  linkType: hard
+
 "eslint-config-next@npm:12.0.3":
   version: 12.0.3
   resolution: "eslint-config-next@npm:12.0.3"
@@ -6609,21 +6728,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"final-form@npm:4.20.10":
+  version: 4.20.10
+  resolution: "final-form@npm:4.20.10"
+  dependencies:
+    "@babel/runtime": ^7.10.0
+  checksum: 92491998d7e284ce47453a54ea94e949aa5852d9307fe8875da9107d2eb966542cbca6f73bd306407eddfbd8d5c8d40cbd6d198358439b5cc4b8c8caea6d8e7b
+  languageName: node
+  linkType: hard
+
 "final-form@npm:4.20.4":
   version: 4.20.4
   resolution: "final-form@npm:4.20.4"
   dependencies:
     "@babel/runtime": ^7.10.0
   checksum: 1f6d4caaf5d1c4e8f8700eac4ffc169a4986527a9e4c45501c1894159910e7e1245f1cda9a2c4f7a79a13d480315b561d4855b858430945cf5b5f0d627fbb4b2
-  languageName: node
-  linkType: hard
-
-"final-form@npm:4.20.7":
-  version: 4.20.7
-  resolution: "final-form@npm:4.20.7"
-  dependencies:
-    "@babel/runtime": ^7.10.0
-  checksum: 0e2a9a9cf70814e1099da38e8a79ff6dc2862f07217dae041ba70c5a4bcc8284c74b0500f00b4935331f5fbe7dc119f63ca4776495ecc8c486c939daa23598ec
   languageName: node
   linkType: hard
 
@@ -8440,6 +8559,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"markdown-table@npm:^3.0.0":
+  version: 3.0.3
+  resolution: "markdown-table@npm:3.0.3"
+  checksum: 8fcd3d9018311120fbb97115987f8b1665a603f3134c93fbecc5d1463380c8036f789e2a62c19432058829e594fff8db9ff81c88f83690b2f8ed6c074f8d9e10
+  languageName: node
+  linkType: hard
+
 "material-colors@npm:^1.2.1":
   version: 1.2.6
   resolution: "material-colors@npm:1.2.6"
@@ -8469,6 +8595,18 @@ __metadata:
     stringify-entities: ^4.0.0
     unist-util-visit-parents: ^5.1.3
   checksum: d04112761659c912b5d7db8f8c035918da52e79ce8cb598c7c270c6f678db0c22f3dea7894b30dec46852409f926306b84ca95683dd1e28731835eb5cb4fbda4
+  languageName: node
+  linkType: hard
+
+"mdast-util-find-and-replace@npm:^2.0.0":
+  version: 2.2.2
+  resolution: "mdast-util-find-and-replace@npm:2.2.2"
+  dependencies:
+    "@types/mdast": ^3.0.0
+    escape-string-regexp: ^5.0.0
+    unist-util-is: ^5.0.0
+    unist-util-visit-parents: ^5.0.0
+  checksum: b4ce463c43fe6e1c38a53a89703f755c84ab5437f49bff9a0ac751279733332ca11c85ed0262aa6c17481f77b555d26ca6d64e70d6814f5b8d12d34a3e53a60b
   languageName: node
   linkType: hard
 
@@ -8522,6 +8660,88 @@ __metadata:
     unist-util-stringify-position: ^3.0.0
     uvu: ^0.5.0
   checksum: c2fac225167e248d394332a4ea39596e04cbde07d8cdb3889e91e48972c4c3462a02b39fda3855345d90231eb17a90ac6e082fb4f012a77c1d0ddfb9c7446940
+  languageName: node
+  linkType: hard
+
+"mdast-util-gfm-autolink-literal@npm:^1.0.0":
+  version: 1.0.3
+  resolution: "mdast-util-gfm-autolink-literal@npm:1.0.3"
+  dependencies:
+    "@types/mdast": ^3.0.0
+    ccount: ^2.0.0
+    mdast-util-find-and-replace: ^2.0.0
+    micromark-util-character: ^1.0.0
+  checksum: 1748a8727cfc533bac0c287d6e72d571d165bfa77ae0418be4828177a3ec73c02c3f2ee534d87eb75cbaffa00c0866853bbcc60ae2255babb8210f7636ec2ce2
+  languageName: node
+  linkType: hard
+
+"mdast-util-gfm-footnote@npm:^1.0.0":
+  version: 1.0.2
+  resolution: "mdast-util-gfm-footnote@npm:1.0.2"
+  dependencies:
+    "@types/mdast": ^3.0.0
+    mdast-util-to-markdown: ^1.3.0
+    micromark-util-normalize-identifier: ^1.0.0
+  checksum: 2d77505f9377ed7e14472ef5e6b8366c3fec2cf5f936bb36f9fbe5b97ccb7cce0464d9313c236fa86fb844206fd585db05707e4fcfb755e4fc1864194845f1f6
+  languageName: node
+  linkType: hard
+
+"mdast-util-gfm-strikethrough@npm:^1.0.0":
+  version: 1.0.3
+  resolution: "mdast-util-gfm-strikethrough@npm:1.0.3"
+  dependencies:
+    "@types/mdast": ^3.0.0
+    mdast-util-to-markdown: ^1.3.0
+  checksum: 17003340ff1bba643ec4a59fd4370fc6a32885cab2d9750a508afa7225ea71449fb05acaef60faa89c6378b8bcfbd86a9d94b05f3c6651ff27a60e3ddefc2549
+  languageName: node
+  linkType: hard
+
+"mdast-util-gfm-table@npm:^1.0.0":
+  version: 1.0.7
+  resolution: "mdast-util-gfm-table@npm:1.0.7"
+  dependencies:
+    "@types/mdast": ^3.0.0
+    markdown-table: ^3.0.0
+    mdast-util-from-markdown: ^1.0.0
+    mdast-util-to-markdown: ^1.3.0
+  checksum: 8b8c401bb4162e53f072a2dff8efbca880fd78d55af30601c791315ab6722cb2918176e8585792469a0c530cebb9df9b4e7fede75fdc4d83df2839e238836692
+  languageName: node
+  linkType: hard
+
+"mdast-util-gfm-task-list-item@npm:^1.0.0":
+  version: 1.0.2
+  resolution: "mdast-util-gfm-task-list-item@npm:1.0.2"
+  dependencies:
+    "@types/mdast": ^3.0.0
+    mdast-util-to-markdown: ^1.3.0
+  checksum: c9b86037d6953b84f11fb2fc3aa23d5b8e14ca0dfcb0eb2fb289200e172bb9d5647bfceb4f86606dc6d935e8d58f6a458c04d3e55e87ff8513c7d4ade976200b
+  languageName: node
+  linkType: hard
+
+"mdast-util-gfm@npm:2.0.2":
+  version: 2.0.2
+  resolution: "mdast-util-gfm@npm:2.0.2"
+  dependencies:
+    mdast-util-from-markdown: ^1.0.0
+    mdast-util-gfm-autolink-literal: ^1.0.0
+    mdast-util-gfm-footnote: ^1.0.0
+    mdast-util-gfm-strikethrough: ^1.0.0
+    mdast-util-gfm-table: ^1.0.0
+    mdast-util-gfm-task-list-item: ^1.0.0
+    mdast-util-to-markdown: ^1.0.0
+  checksum: 7078cb985255208bcbce94a121906417d38353c6b1a9acbe56ee8888010d3500608b5d51c16b0999ac63ca58848fb13012d55f26930ff6c6f3450f053d56514e
+  languageName: node
+  linkType: hard
+
+"mdast-util-gfm@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "mdast-util-gfm@npm:1.0.0"
+  dependencies:
+    mdast-util-gfm-autolink-literal: ^1.0.0
+    mdast-util-gfm-strikethrough: ^1.0.0
+    mdast-util-gfm-table: ^1.0.0
+    mdast-util-gfm-task-list-item: ^1.0.0
+  checksum: 2688e8652b315f377b45d19a63dc5d18012ebe511b646adcd438fedfa2e270de2e34e195dc79cb0ae1613fdc5b41a65208b08017a3a5666c682242a8ce3e654f
   languageName: node
   linkType: hard
 
@@ -8732,6 +8952,114 @@ __metadata:
     micromark-util-types: ^1.0.1
     uvu: ^0.5.0
   checksum: c6dfedc95889cc73411cb222fc2330b9eda6d849c09c9fd9eb3cd3398af246167e9d3cdb0ae3ce9ae59dd34a14624c8330e380255d41279ad7350cf6c6be6c5b
+  languageName: node
+  linkType: hard
+
+"micromark-extension-gfm-autolink-literal@npm:^1.0.0":
+  version: 1.0.5
+  resolution: "micromark-extension-gfm-autolink-literal@npm:1.0.5"
+  dependencies:
+    micromark-util-character: ^1.0.0
+    micromark-util-sanitize-uri: ^1.0.0
+    micromark-util-symbol: ^1.0.0
+    micromark-util-types: ^1.0.0
+  checksum: ec2f6bc4a3eb238c1b8be9744454ffbc2957e3d8a248697af5a26bb21479862300c0e40e0a92baf17c299ddf70d4bc4470d4eee112cd92322f87d81e45c2e83d
+  languageName: node
+  linkType: hard
+
+"micromark-extension-gfm-footnote@npm:^1.0.0":
+  version: 1.1.2
+  resolution: "micromark-extension-gfm-footnote@npm:1.1.2"
+  dependencies:
+    micromark-core-commonmark: ^1.0.0
+    micromark-factory-space: ^1.0.0
+    micromark-util-character: ^1.0.0
+    micromark-util-normalize-identifier: ^1.0.0
+    micromark-util-sanitize-uri: ^1.0.0
+    micromark-util-symbol: ^1.0.0
+    micromark-util-types: ^1.0.0
+    uvu: ^0.5.0
+  checksum: c151a629ee1cd92363c018a50f926a002c944ac481ca72b3720b9529e9c20f1cbef98b0fefdcd2d594af37d0d9743673409cac488af0d2b194210fd16375dcb7
+  languageName: node
+  linkType: hard
+
+"micromark-extension-gfm-strikethrough@npm:^1.0.0":
+  version: 1.0.7
+  resolution: "micromark-extension-gfm-strikethrough@npm:1.0.7"
+  dependencies:
+    micromark-util-chunked: ^1.0.0
+    micromark-util-classify-character: ^1.0.0
+    micromark-util-resolve-all: ^1.0.0
+    micromark-util-symbol: ^1.0.0
+    micromark-util-types: ^1.0.0
+    uvu: ^0.5.0
+  checksum: 169e310a4408feade0df80180f60d48c5cc5b7070e5e75e0bbd914e9100273508162c4bb20b72d53081dc37f1ff5834b3afa137862576f763878552c03389811
+  languageName: node
+  linkType: hard
+
+"micromark-extension-gfm-table@npm:^1.0.0":
+  version: 1.0.7
+  resolution: "micromark-extension-gfm-table@npm:1.0.7"
+  dependencies:
+    micromark-factory-space: ^1.0.0
+    micromark-util-character: ^1.0.0
+    micromark-util-symbol: ^1.0.0
+    micromark-util-types: ^1.0.0
+    uvu: ^0.5.0
+  checksum: 4853731285224e409d7e2c94c6ec849165093bff819e701221701aa7b7b34c17702c44f2f831e96b49dc27bb07e445b02b025561b68e62f5c3254415197e7af6
+  languageName: node
+  linkType: hard
+
+"micromark-extension-gfm-tagfilter@npm:^1.0.0":
+  version: 1.0.2
+  resolution: "micromark-extension-gfm-tagfilter@npm:1.0.2"
+  dependencies:
+    micromark-util-types: ^1.0.0
+  checksum: 7d2441df51f890c86f8e7cf7d331a570b69c8105fa1c2fc5b737cb739502c16c8ee01cf35550a8a78f89497c5dfacc97cf82d55de6274e8320f3aec25e2b0dd2
+  languageName: node
+  linkType: hard
+
+"micromark-extension-gfm-task-list-item@npm:^1.0.0":
+  version: 1.0.5
+  resolution: "micromark-extension-gfm-task-list-item@npm:1.0.5"
+  dependencies:
+    micromark-factory-space: ^1.0.0
+    micromark-util-character: ^1.0.0
+    micromark-util-symbol: ^1.0.0
+    micromark-util-types: ^1.0.0
+    uvu: ^0.5.0
+  checksum: 929f05343d272cffb8008899289f4cffe986ef98fc622ebbd1aa4ff11470e6b32ed3e1f18cd294adb69cabb961a400650078f6c12b322cc515b82b5068b31960
+  languageName: node
+  linkType: hard
+
+"micromark-extension-gfm@npm:2.0.3":
+  version: 2.0.3
+  resolution: "micromark-extension-gfm@npm:2.0.3"
+  dependencies:
+    micromark-extension-gfm-autolink-literal: ^1.0.0
+    micromark-extension-gfm-footnote: ^1.0.0
+    micromark-extension-gfm-strikethrough: ^1.0.0
+    micromark-extension-gfm-table: ^1.0.0
+    micromark-extension-gfm-tagfilter: ^1.0.0
+    micromark-extension-gfm-task-list-item: ^1.0.0
+    micromark-util-combine-extensions: ^1.0.0
+    micromark-util-types: ^1.0.0
+  checksum: c4a917c16d7aa5d00d1767b5ce5f3b1a78c0de11dbd5c8f69d2545083568aa6bb13bd9d8e4c7fec5f4da10e7ed8344b15acffc843b33a615c17396a118bc2bc1
+  languageName: node
+  linkType: hard
+
+"micromark-extension-gfm@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "micromark-extension-gfm@npm:1.0.0"
+  dependencies:
+    micromark-extension-gfm-autolink-literal: ^1.0.0
+    micromark-extension-gfm-strikethrough: ^1.0.0
+    micromark-extension-gfm-table: ^1.0.0
+    micromark-extension-gfm-tagfilter: ^1.0.0
+    micromark-extension-gfm-task-list-item: ^1.0.0
+    micromark-util-combine-extensions: ^1.0.0
+    micromark-util-types: ^1.0.0
+  checksum: 8084ae91e6aeb4ba2cc3b52546a226b833c226542f77980d202c6b52acb23971075e72f6ae55bf6acae8a708978fa72c9d9c4327517f46f4b8bf920261a18b80
   languageName: node
   linkType: hard
 
@@ -10806,6 +11134,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"remark-gfm@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "remark-gfm@npm:2.0.0"
+  dependencies:
+    "@types/mdast": ^3.0.0
+    mdast-util-gfm: ^1.0.0
+    micromark-extension-gfm: ^1.0.0
+    unified: ^10.0.0
+  checksum: 89af4dae7dfcd0da9e08b0cd18f5094dd0265ac238cb8b832b574479b98408b0eecf61ae7008a9fc09ae5f6e1e685ba8f8f7e68632245fbca5127d4b1e30c009
+  languageName: node
+  linkType: hard
+
 "remark-mdx@npm:2.3.0":
   version: 2.3.0
   resolution: "remark-mdx@npm:2.3.0"
@@ -11106,6 +11446,13 @@ __metadata:
     loose-envify: ^1.1.0
     object-assign: ^4.1.1
   checksum: c4b35cf967c8f0d3e65753252d0f260271f81a81e427241295c5a7b783abf4ea9e905f22f815ab66676f5313be0a25f47be582254db8f9241b259213e999b8fc
+  languageName: node
+  linkType: hard
+
+"scmp@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "scmp@npm:2.1.0"
+  checksum: 79c59fd2182e1e09395790776b82c8a4c0a0df3665cbfafe6419167f7707012e443737e7e6b148f74961aac9611e6eafea0a1f7e5d520f14a8248ed17a8fd08e
   languageName: node
   linkType: hard
 
@@ -11514,7 +11861,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "starter-basic@workspace:."
   dependencies:
-    "@tinacms/cli": 1.5.28
+    "@tinacms/cli": 1.5.34
     eslint: 7
     eslint-config-next: 12.0.3
     next: ^12.0.4
@@ -11922,7 +12269,71 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tinacms@npm:1.5.19, tinacms@npm:^1.5.19":
+"tinacms@npm:1.5.24":
+  version: 1.5.24
+  resolution: "tinacms@npm:1.5.24"
+  dependencies:
+    "@floating-ui/dom": ^1.4.4
+    "@floating-ui/react-dom": ^2.0.1
+    "@graphql-inspector/core": ^4.0.0
+    "@headlessui/react": ^1.5.0
+    "@heroicons/react": ^1.0.4
+    "@monaco-editor/react": 4.4.5
+    "@radix-ui/react-popover": ^1.0.6
+    "@react-aria/i18n": ^3.3.4
+    "@react-hook/window-size": ^3.0.7
+    "@react-types/combobox": ^3.2.0
+    "@react-types/shared": ^3.10.0
+    "@sambego/storybook-styles": ^1.0.0
+    "@tinacms/mdx": 1.3.22
+    "@tinacms/schema-tools": 1.4.14
+    "@tinacms/search": 1.0.14
+    "@tinacms/sharedctx": 1.0.2
+    "@udecode/plate-headless": ^21.4.0
+    atob: 2.1.2
+    color-string: ^1.5.3
+    crypto-js: ^4.0.0
+    date-fns: 2.30.0
+    encoding: 0.1.13
+    fetch-ponyfill: ^7.1.0
+    final-form: 4.20.10
+    final-form-arrays: ^3.0.1
+    final-form-set-field-data: ^1.0.2
+    graphql: 15.8.0
+    graphql-tag: ^2.11.0
+    is-hotkey: ^0.2.0
+    lodash.get: ^4.4.2
+    lodash.set: ^4.3.2
+    moment: 2.29.4
+    monaco-editor: 0.31.0
+    prism-react-renderer: ^2.0.6
+    prismjs: ^1.28.0
+    prop-types: 15.7.2
+    react-beautiful-dnd: ^13.1.0
+    react-color: ^2.17.3
+    react-datetime: ^2.16.3
+    react-dropzone: 14.2.3
+    react-final-form: ^6.3.0
+    react-icons: ^4.3.1
+    react-onclickoutside: ^6.13.0
+    react-router-dom: 6.3.0
+    react-textarea-autosize: 8.5.2
+    scheduler: 0.19.0
+    slate: ^0.94.1
+    slate-history: ^0.93.0
+    slate-hyperscript: ^0.77.0
+    slate-react: ^0.97.1
+    webfontloader: 1.6.28
+    yup: ^0.32.0
+    zod: ^3.14.3
+  peerDependencies:
+    react: ">=16.14.0"
+    react-dom: ">=16.14.0"
+  checksum: c429ec6a1935500a34d5dd68e34a8af80365fd95b0e823f3e5c8db28e762b778b730c130aa6b952fced5a15d7a7dc06021f6760805a2a54bac86ae4779732864
+  languageName: node
+  linkType: hard
+
+"tinacms@npm:^1.5.19":
   version: 1.5.19
   resolution: "tinacms@npm:1.5.19"
   dependencies:
@@ -12248,6 +12659,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"typescript@npm:4.3.5":
+  version: 4.3.5
+  resolution: "typescript@npm:4.3.5"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: bab033b5e2b0790dd35b77fd005df976ef80b8d84fd2c6e63cc31808151875beae9216e5a315fe7068e8499905c3c354248fe83272cdfc13b7705635f0c66c97
+  languageName: node
+  linkType: hard
+
 "typescript@npm:^4.6.4":
   version: 4.9.5
   resolution: "typescript@npm:4.9.5"
@@ -12255,6 +12676,16 @@ __metadata:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: ee000bc26848147ad423b581bd250075662a354d84f0e06eb76d3b892328d8d4440b7487b5a83e851b12b255f55d71835b008a66cbf8f255a11e4400159237db
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@4.3.5#~builtin<compat/typescript>":
+  version: 4.3.5
+  resolution: "typescript@patch:typescript@npm%3A4.3.5#~builtin<compat/typescript>::version=4.3.5&hash=dba6d9"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 365df18cf979c971ef9543b2acaa8694377a803f98e1804c41d0ede0b09d7046cb0cd98f2eaf3884b0fe923c01a60af1f653841bd8805c9715d5479c09a4ebe4
   languageName: node
   linkType: hard
 
@@ -12405,7 +12836,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unist-util-visit-parents@npm:^5.1.1, unist-util-visit-parents@npm:^5.1.3":
+"unist-util-visit-parents@npm:^5.0.0, unist-util-visit-parents@npm:^5.1.1, unist-util-visit-parents@npm:^5.1.3":
   version: 5.1.3
   resolution: "unist-util-visit-parents@npm:5.1.3"
   dependencies:
